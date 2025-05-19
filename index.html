@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click Game</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; padding-top: 50px; }
+    #box {
+      width: 150px; height: 150px;
+      background: salmon; margin: 20px auto;
+      line-height: 150px; font-size: 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Click the Box!</h1>
+  <div id="box">0</div>
+  <p id="timer">10</p>
+  <p id="result"></p>
+
+  <script>
+    let count = 0;
+    let time = 10;
+    let box = document.getElementById('box');
+    let timerText = document.getElementById('timer');
+    let result = document.getElementById('result');
+
+    let active = true;
+    box.onclick = () => {
+      if (active) {
+        count++;
+        box.textContent = count;
+      }
+    };
+
+    let countdown = setInterval(() => {
+      time--;
+      timerText.textContent = time;
+      if (time === 0) {
+        clearInterval(countdown);
+        active = false;
+        result.textContent = "Done! You clicked " + count + " times.";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
