@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Counter</title>
+    <script src="script1.js" defer></script>
+</head>
+<body>
+    <title>Clicker Counter</title>
+    <a href="https://www.youtube.com/watch?v=-QuVe-hjMs0"></a>
+    <div class="operation-button" id="clicks">Click With Your Mouse<img src="https://archerspestcontrol.co.uk/images/jch-optimize/ng/images_2019_10_20_mouse-control.webp" alt=""></div>
+</body>
+</html>
