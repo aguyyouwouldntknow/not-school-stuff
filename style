@@ -1,0 +1,8 @@
+let clicks = document.querySelector("#clicks");
+console.log(clicks)
+let n = 0
+
+clicks.addEventListener("click", function(){
+    n++;
+    clicks.textContent = n
+})
